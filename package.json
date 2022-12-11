@@ -1,0 +1,14 @@
+{
+  "name": "lunchroom",
+  "packageManager": "yarn@3.3.0",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "start": "concurrently \"yarn workspace client start\" \"yarn workspace server start\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
